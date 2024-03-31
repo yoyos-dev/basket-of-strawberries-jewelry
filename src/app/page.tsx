@@ -82,7 +82,7 @@ export default function Home() {
           <img src="profile.jpeg" className="rounded-2xl shadow-xl h-52 w-52 my-8 object-cover"></img>
           <p className="text-red-700 text-3xl text-center">Jazmin Gong</p>
           <p className="text-black text-2xl text-center my-2">Chicago, IL</p>
-          <p className="text-gray-500 text-sm text-center mx-2 my-2">Jeweler and Entrepreneur - makes beautiful jewelry and specializes in necklaces and earrings.</p>
+          <p className="text-gray-500 text-sm text-center mx-2 my-2">Like a grocery store but Jewelry. Handmade and original designs specializing in necklaces and earrings. :)</p>
 
         <div className="hidden sm:block">
             <div className="flex flex-row gap-2 justify-center my-8">

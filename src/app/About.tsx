@@ -5,7 +5,7 @@ export default function About() {
     <div className="h-full w-full flex flex-col sm:overflow-auto items-center gap-4 pb-4">
       <h1 className="text-3xl text-red-700 font-bold text-center bg-rose-100 w-full p-2">About Basket of Strawberries</h1>
       <div className="flex flex-col xl:flex-row  mx-8 sm:mx-16 text-lg gap-8">
-        <img src="AboutBos.jpg" className="object-cover rounded-lg xl:w-1/2"></img>
+        <img src="AboutBoS.jpg" className="object-cover rounded-lg xl:w-1/2"></img>
         <div className="flex flex-col gap-2">
           <p>Basket of Strawberries is not just a brand that sells cute and fun jewelry, but an entire experience. You can find fresh batches of handmade earrings, one-of-a-kind chunky necklaces, and keychains, which are all designed by me.</p>
           <p>The experience of buying jewelry from Basket of Strawberries is like wandering through a fresh produce market. As you search for a new necklace or a perfect pair of earrings to complete your outfit, you are encouraged to carefully browse through each piece, just like you would while searching for fruits and vegetables in a grocery store. Every item is unique and rarely repeated, as only a few of each design are made.</p>

@@ -14,8 +14,8 @@ export default function About() {
       <h1 className="text-3xl mx-8 sm:mx-16 lg:mx-32 xl:mx-64 text-red-700 font-bold text-center bg-rose-100 w-full p-2">About Me</h1>
       <div className="flex flex-col xl:flex-row mx-8 sm:mx-16 lg:mx-32 text-lg gap-4">
         <div className="flex flex-col gap-2">
-          <p>I'm 21 years old but have had a passion for creating ever since I was young. Growing up in the south side of Chicago forces you to be creative and to find charm in anything you choose to find charm in. This limit in access to supplies forced me to learn to create art using anything I could find; even trash! As a first-generation American raised in a Chinese household, it is my dream to share my culture through my art for all to see.</p>
-          <p>I appreciate the craftiness I learned from the habits of my Cantonese family along with the humor and style of 2000's cartoons and sitcoms which heavily impacted my art. The interwovenness of my American childhood and my Chinese heritage influence everything I make. My hope is to capture the emotion behind my art in a way that others can relate to through my brand Basket of Strawberries!</p>
+          <p>Im 21 years old but have had a passion for creating ever since I was young. Growing up in the south side of Chicago forces you to be creative and to find charm in anything you choose to find charm in. This limit in access to supplies forced me to learn to create art using anything I could find; even trash! As a first-generation American raised in a Chinese household, it is my dream to share my culture through my art for all to see.</p>
+          <p>I appreciate the craftiness I learned from the habits of my Cantonese family along with the humor and style of 2000s cartoons and sitcoms which heavily impacted my art. The interwovenness of my American childhood and my Chinese heritage influence everything I make. My hope is to capture the emotion behind my art in a way that others can relate to through my brand Basket of Strawberries!</p>
         </div>
         <img src="profile.jpeg" className="object-cover rounded-lg"></img>
       </div>

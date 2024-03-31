@@ -1,4 +1,5 @@
 'use client';
+import Head from "next/head";
 import JewelryBox from "./JewelryBox";
 import News from "./News";
 import About from "./About";
@@ -33,7 +34,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col h-screen w-screen">
-      <head>
+      <Head>
         <title>Basket of Strawberries</title>
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link
@@ -48,7 +49,7 @@ export default function Home() {
           type="image/<generated>"
           sizes="<generated>"
         />
-      </head>
+      </Head>
       <nav className="bg-red-700 text-2xl text-center w-full text-white flex flex-row items-center h-12 p-2">
         <div onClick={openNav} className="sm:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" width="18.853" height="12" viewBox="0 0 18.853 12" className="hover:cursor-pointer">

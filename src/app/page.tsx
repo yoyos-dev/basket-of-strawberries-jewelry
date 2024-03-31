@@ -5,12 +5,22 @@ import News from "./News";
 import About from "./About";
 import BoothConcept from "./Booth Concept";
 import InteractiveButton from './InteractiveButton';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 export default function Home() {
   const [selectedComponent, setSelectedComponent] = useState('JewelryBox');
   const [isNavOpen, setIsNavOpen] = useState(false);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (!(event.target as Element).closest('#sideNav') && isNavOpen) {
+        exitNav();
+      }
+    };
+  
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, [isNavOpen]);
 
   function openNav() {
     const sideBar = document.getElementById("sideBar");
@@ -51,7 +61,7 @@ export default function Home() {
         />
       </Head>
       <nav className="bg-red-700 text-2xl text-center w-full text-white flex flex-row items-center h-12 p-2">
-        <div onClick={openNav} className="sm:hidden">
+        <div onClick={openNav} className="sm:hidden hover:cursor-pointer w-fit flex items-center h-full">
           <svg xmlns="http://www.w3.org/2000/svg" width="18.853" height="12" viewBox="0 0 18.853 12" className="hover:cursor-pointer">
             <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-4.5 -8)">
               <path id="Path_3" data-name="Path 3" d="M4.5,18H23.353" transform="translate(0 -4)" fill="none" stroke="#fff" strokeLinejoin="round" strokeWidth="2"/>
@@ -61,8 +71,8 @@ export default function Home() {
           </svg>
         </div>
 
-        <div onClick={exitNav} id="sideBar">
-          <div id="sideNav" className="fixed top-0 left-0 bg-slate-300 z-10 overflow-x-hidden duration-200 font-bold flex flex-col justify-center items-center h-full w-0">
+        <div id="sideBar">
+          <div id="sideNav" className={`fixed top-0 left-0 bg-slate-300 z-10 overflow-x-hidden duration-200 font-bold flex flex-col justify-center items-center h-full ${isNavOpen ? 'w-60' : 'w-0'}`}>
             <a onClick={exitNav} className="text-black text-3xl absolute top-0 left-0 ml-2 mt-1 hover:cursor-pointer select-none">&times;</a>
 
             <p className="text-red-700">Basket of Strawberries</p>

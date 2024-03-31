@@ -2,6 +2,7 @@
 import JewelryBox from "./JewelryBox";
 import News from "./News";
 import About from "./About";
+import BoothConcept from "./Booth Concept";
 import InteractiveButton from './InteractiveButton';
 import React, { useState } from 'react';
 
@@ -50,7 +51,7 @@ export default function Home() {
             <p className="text-red-700">Basket of Strawberries</p>
 
             <div className="flex flex-row gap-2 justify-center my-6">
-              <InteractiveButton url="https://www.facebook.com/strawberrybasket/events/" imgSrc="Icons/Facebook.png" />
+              <InteractiveButton url="https://www.facebook.com/profile.php?id=61557517305356&mibextid=LQQJ4d" imgSrc="Icons/Facebook.png" />
               <InteractiveButton url="https://www.instagram.com/basketofstrawberry/" imgSrc="Icons/Instagram.png" />
               <InteractiveButton url="https://www.tiktok.com/@basketofstrawberry" imgSrc="Icons/TikTok.png" />
               <a href="mailto:Basketofstrawberryjewelry@gmail.com" className="rounded-full h-12 w-12">
@@ -59,12 +60,14 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-2">
-            <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'JewelryBox' ? 'underline' : ''}`}
+              <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'JewelryBox' ? 'underline' : ''}`}
   onClick={() => setSelectedComponent('JewelryBox')}>Portfolio</button>
-              <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'News' ? 'underline' : ''}`}
-  onClick={() => setSelectedComponent('News')}>News</button>
+              <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'Booth Concept' ? 'underline' : ''}`}
+  onClick={() => setSelectedComponent('Booth Concept')}>Booth Concept</button>
               <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'About' ? 'underline' : ''}`}
   onClick={() => setSelectedComponent('About')}>About</button>
+              <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'News' ? 'underline' : ''}`}
+  onClick={() => setSelectedComponent('News')}>News</button>
             </div>
           </div>
         </div>
@@ -83,7 +86,7 @@ export default function Home() {
 
         <div className="hidden sm:block">
             <div className="flex flex-row gap-2 justify-center my-8">
-              <InteractiveButton url="https://www.facebook.com/strawberrybasket/events/" imgSrc="Icons/Facebook.png" />
+              <InteractiveButton url="https://www.facebook.com/profile.php?id=61557517305356&mibextid=LQQJ4d" imgSrc="Icons/Facebook.png" />
               <InteractiveButton url="https://www.instagram.com/basketofstrawberry/" imgSrc="Icons/Instagram.png" />
               <InteractiveButton url="https://www.tiktok.com/@basketofstrawberry" imgSrc="Icons/TikTok.png" />
               <a href="mailto:Basketofstrawberryjewelry@gmail.com" className="rounded-full h-12 w-12">
@@ -94,16 +97,21 @@ export default function Home() {
             <div className="flex flex-col gap-2 my-10">
               <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'JewelryBox' ? 'underline' : ''}`}
   onClick={() => setSelectedComponent('JewelryBox')}>Portfolio</button>
-              <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'News' ? 'underline' : ''}`}
-  onClick={() => setSelectedComponent('News')}>News</button>
+              <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'Booth Concept' ? 'underline' : ''}`}
+  onClick={() => setSelectedComponent('Booth Concept')}>Booth Concept</button>
               <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'About' ? 'underline' : ''}`}
   onClick={() => setSelectedComponent('About')}>About</button>
+              <button className={`text-red-700 text-2xl text-center ${selectedComponent === 'News' ? 'underline' : ''}`}
+  onClick={() => setSelectedComponent('News')}>News</button>
             </div>
           </div>
         </div>
 
         {
           selectedComponent === 'JewelryBox' && <JewelryBox />
+        }
+        {
+          selectedComponent === 'Booth Concept' && <BoothConcept />
         }
         {
           selectedComponent === 'About' && <About />

@@ -33,6 +33,22 @@ export default function Home() {
 
   return (
     <main className="flex flex-col h-screen w-screen">
+      <head>
+        <title>Basket of Strawberries</title>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <nav className="bg-red-700 text-2xl text-center w-full text-white flex flex-row items-center h-12 p-2">
         <div onClick={openNav} className="sm:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" width="18.853" height="12" viewBox="0 0 18.853 12" className="hover:cursor-pointer">

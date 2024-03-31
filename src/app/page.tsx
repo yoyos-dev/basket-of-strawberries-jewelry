@@ -106,13 +106,13 @@ export default function Home() {
       <div className="flex flex-col sm:flex-row w-full flex-grow sm:overflow-hidden">
         {/* Profile Bar */}
         <div className="flex flex-col h-full w-full sm:w-1/2 xl:w-1/4 items-center overflow-auto">
-          <img src="profile.jpeg" className="rounded-2xl shadow-xl h-52 w-52 my-8 object-cover"></img>
+          <img src="Profile.jpg" className="rounded-2xl shadow-xl h-60 w-52 my-8 object-cover"></img>
           <p className="text-red-700 text-3xl text-center">Jazmin Gong</p>
           <p className="text-black text-2xl text-center my-2">Chicago, IL</p>
           <p className="text-gray-500 text-sm text-center mx-2 my-2">Like a grocery store but Jewelry. Handmade and original designs specializing in necklaces and earrings. :)</p>
 
         <div className="hidden sm:block">
-            <div className="flex flex-row gap-2 justify-center my-8">
+            <div className="flex flex-row gap-2 justify-center my-6">
               <InteractiveButton url="https://www.facebook.com/profile.php?id=61557517305356&mibextid=LQQJ4d" imgSrc="Icons/Facebook.png" />
               <InteractiveButton url="https://www.instagram.com/basketofstrawberry/" imgSrc="Icons/Instagram.png" />
               <InteractiveButton url="https://www.tiktok.com/@basketofstrawberry" imgSrc="Icons/TikTok.png" />

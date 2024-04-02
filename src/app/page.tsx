@@ -129,7 +129,7 @@ export default function Home() {
 
       <div className="flex flex-col sm:flex-row w-full flex-grow sm:overflow-hidden mt-12">
         {/* Profile Bar */}
-        <div className="flex flex-col h-full w-full sm:w-1/2 xl:w-1/4 items-center overflow-hidden">
+        <div className="flex flex-col h-full w-full sm:w-1/2 xl:w-1/4 items-center overflow-auto bg-slate-100">
           <img src="Profile.jpg" className="rounded-2xl shadow-xl h-60 w-52 my-6 object-cover hover:cursor-help"></img>
           <p className="text-red-700 text-3xl text-center">Jazmin Gong</p>
           <p className="text-black text-2xl text-center">Chicago, IL</p>

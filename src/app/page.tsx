@@ -78,7 +78,7 @@ export default function Home() {
           sizes="<generated>"
         />
       </Head>
-      <nav className="bg-red-700 text-2xl text-center w-full text-white flex flex-row items-center h-12 p-2">
+      <nav className="bg-red-700 text-2xl fixed text-center w-full text-white flex flex-row items-center h-12 p-2">
         <div onClick={openNav} className="sm:hidden hover:cursor-pointer w-fit flex items-center h-full">
           <svg xmlns="http://www.w3.org/2000/svg" width="18.853" height="12" viewBox="0 0 18.853 12" className="hover:cursor-pointer">
             <g id="Icon_feather-menu" data-name="Icon feather-menu" transform="translate(-4.5 -8)">
@@ -90,10 +90,10 @@ export default function Home() {
         </div>
 
         <div onClick={exitNav} id="sideBar">
-          <div id="sideNav" className={`fixed top-0 left-0 bg-slate-300 z-10 overflow-x-hidden duration-200 font-bold flex flex-col justify-center items-center h-full ${isNavOpen ? 'w-60' : 'w-0'}`}>
+          <div id="sideNav" className={`fixed top-0 left-0 bg-rose-100 z-10 overflow-x-hidden duration-200 font-bold flex flex-col justify-center items-center h-full ${isNavOpen ? 'w-60' : 'w-0'}`}>
             <a onClick={exitNav} className="text-black text-3xl absolute top-0 left-0 ml-2 mt-1 hover:cursor-pointer select-none">&times;</a>
 
-            <p className="text-red-700 bg-rose-300 p-4 mb-10 w-full">Basket of Strawberries</p>
+            <p className="text-red-700 bg-emerald-500 p-4 mb-10 w-full">Basket of Strawberries</p>
 
 
             <div className="flex flex-col gap-1">
@@ -127,9 +127,9 @@ export default function Home() {
 
       </nav>
 
-      <div className="flex flex-col sm:flex-row w-full flex-grow sm:overflow-hidden">
+      <div className="flex flex-col sm:flex-row w-full flex-grow sm:overflow-hidden mt-12">
         {/* Profile Bar */}
-        <div className="flex flex-col h-full w-full sm:w-1/2 xl:w-1/4 items-center overflow-auto">
+        <div className="flex flex-col h-full w-full sm:w-1/2 xl:w-1/4 items-center overflow-hidden">
           <img src="Profile.jpg" className="rounded-2xl shadow-xl h-60 w-52 my-6 object-cover hover:cursor-help"></img>
           <p className="text-red-700 text-3xl text-center">Jazmin Gong</p>
           <p className="text-black text-2xl text-center">Chicago, IL</p>

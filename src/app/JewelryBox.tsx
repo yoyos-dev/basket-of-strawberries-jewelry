@@ -47,7 +47,7 @@ export default function JewelryBox() {
   return (
     <div className="h-full w-full flex flex-row gap-4 p-4 sm:overflow-auto">
       {columnImages.map((column, columnIndex) => (
-        <div key={columnIndex} className="flex flex-col gap-4 h-fit w-full">
+        <div key={columnIndex} className="flex flex-col gap-4 h-fit w-full mb-72">
           {column.map((src, imageIndex) => {
             return (
               <img key={imageIndex} src={src} className={`${getRandomBgColor()} w-full h-auto max-h-72 object-scale-down p-3`} alt="" />
